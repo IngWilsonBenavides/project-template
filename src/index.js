@@ -1,4 +1,5 @@
 import './style.css'
+import './scss/main.scss'
 import { suma } from './suma'
 
 const profesor = 'Jonathan'
