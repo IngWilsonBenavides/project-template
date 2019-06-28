@@ -75,8 +75,12 @@ module.exports = {
         }
       }
     ]
-  },
+  }, 
   plugins: [    
+    new MiniCssExtractPlugin({
+      filename: '[name].[chunkhash].css',
+      chunkFilename: '[id].css'
+    }),
     new HtmlWebpackPlugin({
       template: './src/template.html',
       filename: 'index.html',
